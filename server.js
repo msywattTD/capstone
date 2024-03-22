@@ -23,8 +23,8 @@ const imageRouter = require("./routes/images");
 app.use("/images", imageRouter);
 
 app.get("/seed", async (req, res) => {
-  //   await Image.deleteMany({});
-  await Image.create({ seedData });
+  await Image.deleteMany({});
+  await Image.create(seedData);
 
   res.json({ message: "DB seed data created." });
 });
