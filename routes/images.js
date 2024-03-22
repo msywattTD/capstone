@@ -39,4 +39,12 @@ router.post("/newPost", async (req, res) => {
   }
 });
 
+//DELETE ROUTES --------------------------------------------------------------------------------
+//delete a post
+router.delete("/deletePost/:postTitle", async (req, res) => {
+  await Image.deleteOne({ postTitle: req.params.postTitle });
+  res
+    .status(200)
+    .json({ message: `${req.params.postTitle} has been deleted.` });
+});
 module.exports = router;
