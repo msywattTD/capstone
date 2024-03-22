@@ -39,6 +39,23 @@ router.post("/newPost", async (req, res) => {
   }
 });
 
+//PATCH ROUTES ---------------------------------------------------------------------------------
+//edit a post
+router.patch("/editPost/:postTitle", async (req, res) => {
+  const post = await Image.findOne({ postTitle: req.params.postTitle });
+  try {
+    (post.postTitle = req.body.postTitle || post.postTitle),
+      (post.datePosted = req.body.datePosted || post.datePosted),
+      (post.postedBy = req.body.postedBy || post.postedBy),
+      (post.tags = req.body.tags || post.tags),
+      (post.filePath = req.body.filePath || post.filePath);
+    post.save();
+    res.status(200).json({ post });
+  } catch (e) {
+    res.status(400).json({ message: e.message });
+  }
+});
+
 //DELETE ROUTES --------------------------------------------------------------------------------
 //delete a post
 router.delete("/deletePost/:postTitle", async (req, res) => {
