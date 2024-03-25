@@ -9,6 +9,12 @@ router.get("/", async (req, res) => {
   res.send(imagesList);
 });
 
+//get all images || default sort by date (+++)
+router.get("/home", async (req, res) => {
+  let imagesList = await Image.find().limit(5);
+  res.send(imagesList);
+});
+
 //get all images by a user
 router.get("/user=:userId", async (req, res) => {
   let imagesList = await Image.find({ postedBy: req.params.userId });
@@ -16,8 +22,8 @@ router.get("/user=:userId", async (req, res) => {
 });
 
 //get a single image by post title || may modify this to post count after live
-router.get("/:postTitle", async (req, res) => {
-  let imagesList = await Image.find({ postTitle: req.params.postTitle });
+router.get("/:postId", async (req, res) => {
+  let imagesList = await Image.find({ _id: req.params.postId });
   res.send(imagesList);
 });
 
@@ -64,4 +70,5 @@ router.delete("/deletePost/:postTitle", async (req, res) => {
     .status(200)
     .json({ message: `${req.params.postTitle} has been deleted.` });
 });
+
 module.exports = router;

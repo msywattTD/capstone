@@ -6,6 +6,9 @@ const imagesSchema = new mongoose.Schema({
   postedBy: { type: Number },
   tags: { type: Array },
   filePath: { type: String },
+  postId: { type: String },
 });
+
+imagesSchema.index({ datePosted: -1 });
 
 module.exports = mongoose.model("Image", imagesSchema);
