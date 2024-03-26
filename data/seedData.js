@@ -7,144 +7,133 @@ const seedData = [
     datePosted: "March 21, 2024 15:00:00",
     postedBy: 0,
     tags: ["dog", "flowers", "field", "sitting", "gold", "happy", "puppy"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog1.jpg",
+    filePath: "https://i.imgur.com/LUbzWFr.jpeg",
   },
   {
     postTitle: "dog2",
     datePosted: "March 21, 2024 15:01:00",
     postedBy: 1,
     tags: ["dog", "close up", "black", "brown", "sad", "puppy"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog2.webp",
+    filePath: "https://i.imgur.com/ZC7Wrcu.jpeg",
   },
   {
     postTitle: "dog3",
     datePosted: "March 21, 2024 15:02:00",
     postedBy: 2,
     tags: ["dog", "field", "black", "brown", "panting", "standing"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog3.webp",
+    filePath: "https://i.imgur.com/K23nZOK.jpeg",
   },
   {
     postTitle: "dog4",
     datePosted: "March 21, 2024 15:03:00",
     postedBy: 2,
     tags: ["dog", "field", "white", "walking", "panting", "happy"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog4.webp",
+    filePath: "https://i.imgur.com/bgaHmyt.jpeg",
   },
   {
     postTitle: "dog5",
     datePosted: "March 21, 2024 15:04:00",
     postedBy: 1,
     tags: ["dog", "driveway", "gold", "sitting", "puppy", "happy"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog5.jpg",
+    filePath: "https://i.imgur.com/nFLOtAP.jpeg",
   },
   {
     postTitle: "dog6",
     datePosted: "March 21, 2024 15:05:00",
     postedBy: 1,
     tags: ["dog", "field", "gold", "sitting", "dogs", "brown", "mixed fur"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog6.jpg",
+    filePath: "https://i.imgur.com/UXJcBDO.jpeg",
   },
   {
     postTitle: "dog7",
     datePosted: "March 21, 2024 15:06:00",
     postedBy: 2,
     tags: ["dog", "close up", "white", "happy"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog7.jpg",
+    filePath: "https://i.imgur.com/grKOk4M.jpeg",
   },
   {
     postTitle: "dog8",
     datePosted: "March 21, 2024 15:07:00",
     postedBy: 1,
     tags: ["dog", "close up", "white"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog8.jpg",
+    filePath: "https://i.imgur.com/ce3mEgq.jpeg",
   },
   {
     postTitle: "dog9",
     datePosted: "March 21, 2024 15:08:00",
     postedBy: 1,
     tags: ["dog", "black", "road"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog9.jpg",
+    filePath: "https://i.imgur.com/TsemLTO.jpeg",
   },
   {
     postTitle: "cat1",
     datePosted: "March 21, 2024 15:09:00",
     postedBy: 0,
     tags: ["cat", "white", "grey", "close up"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat1.jpg",
+    filePath: "https://i.imgur.com/e07RIp1.jpeg",
   },
   {
     postTitle: "cat2",
     datePosted: "March 21, 2024 15:10:00",
     postedBy: 1,
-    tags: ["cat", "brown", "close up"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat2.avif",
+    tags: ["cat", "grey", "close up"],
+    filePath: "https://i.imgur.com/P2IPSly.jpeg",
   },
   {
     postTitle: "cat3",
     datePosted: "March 21, 2024 15:11:00",
     postedBy: 2,
     tags: ["cat", "orange", "close up", "teeth"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat3.webp",
+    filePath: "https://i.imgur.com/UCWS7c2.jpeg",
   },
   {
     postTitle: "cat4",
     datePosted: "March 21, 2024 15:12:00",
     postedBy: 1,
     tags: ["cat", "orange", "glasses"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat4.jpg",
+    filePath: "https://i.imgur.com/WCF3BlQ.jpeg",
   },
   {
     postTitle: "cat5",
     datePosted: "March 21, 2024 15:13:00",
     postedBy: 0,
     tags: ["cat", "black", "stupid"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat5.jpg",
+    filePath: "https://i.imgur.com/xnZhCy5.jpeg",
   },
   {
     postTitle: "cat6",
     datePosted: "March 21, 2024 15:14:00",
     postedBy: 2,
     tags: ["cat", "white", "predator"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/cat6.png",
+    filePath: "https://i.imgur.com/hPYxkPr.png",
   },
   {
     postTitle: "dog10",
     datePosted: "March 21, 2024 15:15:00",
     postedBy: 2,
     tags: ["dog", "brown", "field", "flowers"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog10.jpg",
+    filePath: "https://i.imgur.com/Hj5ubyh.jpeg",
   },
   {
     postTitle: "dog11",
     datePosted: "March 21, 2024 15:16:00",
     postedBy: 1,
     tags: ["dog", "white", "field", "stupid"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog11.jpg",
+    filePath: "https://i.imgur.com/IHa4pd9.jpeg",
   },
   {
     postTitle: "dog12",
     datePosted: "March 21, 2024 15:16:00",
     postedBy: 1,
     tags: ["dog", "white", "black", "field", "balls", "close up"],
-    filePath:
-      "C:/Users/typic/Documents/GitHub/RTT-125/Capstone/Backend/data/images/dog12.jpg",
+    filePath: "https://i.imgur.com/Kh27ebF.jpeg",
+  },
+  {
+    postTitle: "cat7",
+    datePosted: "March 25, 2024 10:55:00",
+    postedBy: 2,
+    tags: ["cat", "grey", "close up", "cosmic", "glasses"],
+    filePath: "https://i.imgur.com/UHGioBC.jpeg",
   },
 ];
 
