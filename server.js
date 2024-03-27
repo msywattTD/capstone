@@ -4,8 +4,10 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const Image = require("./models/images.js");
+const User = require("./models/users.js");
 
 const seedData = require("./data/seedData.js");
+const allUsers = require("./data/users.js");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,9 +26,15 @@ app.use(cors());
 const imageRouter = require("./routes/images");
 app.use("/images", imageRouter);
 
+const userRouter = require("./routes/users");
+app.use("/users", userRouter);
+
 app.get("/seed", async (req, res) => {
   await Image.deleteMany({});
   await Image.create(seedData);
+
+  await User.deleteMany({});
+  await User.create(allUsers);
 
   res.json({ message: "DB seed data created." });
 });
